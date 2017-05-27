@@ -8,9 +8,23 @@
 </div>
 
 <div id='home-search'>
-  <input id='home-searchbar' type='text' ng-model='search' />
+  <input id='home-searchbar' type='text' ng-model='search' autofocus />
   <a ui-sref='results' ng-click='getBook(search)'><img id='search-button' src='./images/search-button.png'></a>
 </div>
 
 <p class='home'>Search the world's most comprehensive index of full-text books.</p>
-<p class='my-library'><a href=''>My library</a></p>
+<p class='my-library'><a class='my-library' href=''>My library</a></p>
+
+<footer>
+  <ul class='left-footer'>
+    <a target='_blank' href='https://books.google.com/intl/en/googlebooks/privacy.html'>Privacy</a>
+    <a target='_blank' href='https://books.google.com/intl/en/googlebooks/tos.html'>Terms</a>
+    <a target='_blank' href='https://support.google.com/websearch/answer/43729?hl=en&visit_id=1-636315041158757722-3954512581&rd=1'>Help</a>
+  </ul>
+
+  <ul class='right-footer'>
+    <a target='_blank' href='http://books.google.com/support/partner/?hl=en'>Publishers</a>
+    <a target='_blank' href='https://books.google.com/intl/en/googlebooks/about/index.html'>About</a>
+  </ul>
+
+</footer>

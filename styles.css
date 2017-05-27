@@ -2,6 +2,10 @@
   height: 100% vh;
 }
 
+*:focus {
+  outline: none;
+}
+
 nav.home {
   position: fixed;
   top: 0;
@@ -28,6 +32,18 @@ nav.home {
   border-radius: 1px;
   border: 1px solid #d9d9d9;
   border-top: 1px solid #c0c0c0;
+  font-size: 17px;
+  padding-left: 8px;
+}
+
+#home-searchbar:hover {
+  border-radius: 1px;
+  border: 2px solid #d9d9d9;
+  border-top: 2px solid #c0c0c0;
+}
+
+#home-searchbar:focus {
+  outline: none;
 }
 
 #home-search {
@@ -57,6 +73,10 @@ p.my-library {
   font-family: arial, sans-serif;
 }
 
+a.my-library {
+  color: #0000EE !important;
+}
+
 #signin-button {
   float: right;
   width: 72px;
@@ -69,4 +89,46 @@ p.my-library {
   width: 36px;
   margin-top: 14px;
   margin-right: .6%;
+}
+
+footer {
+  width: 100%;
+  height: 50px;
+  background-color: #f2f2f2;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #e4e4e4;
+}
+
+a {
+  display: inline;
+  color: rgb(102, 102, 102);
+  font-size: 13px;
+}
+
+.left-footer {
+  text-decoration: none;
+  float: left;
+  list-style: none;
+  margin-bottom: 0;
+  margin-left: -23px;;
+  width: 226px;;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1px;
+}
+
+.right-footer {
+  text-decoration: none;
+  float: right;
+  list-style: none;
+  margin-bottom: 0;
+  margin-right: 16px;
+  width: 190px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1px;
 }
