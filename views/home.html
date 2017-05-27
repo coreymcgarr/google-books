@@ -1,11 +1,16 @@
+<nav class='home'>
+  <a ui-sref=''><img id='signin-button' src='./images/signin.png'></a>
+  <a><img id='menu-button' src='./images/menu-button.png'></a>
+</nav>
+
 <div>
   <img id='home-logo' src='./images/google-books-logo.png' />
 </div>
 
 <div id='home-search'>
   <input id='home-searchbar' type='text' ng-model='search' />
-  <button ui-sref='results' ng-click='getBook(search)'><img id='search-button' src='./images/search-button.png'></button>
+  <a ui-sref='results' ng-click='getBook(search)'><img id='search-button' src='./images/search-button.png'></a>
 </div>
 
 <p class='home'>Search the world's most comprehensive index of full-text books.</p>
-<p class='home'><a href=''>My library</a></p>
+<p class='my-library'><a href=''>My library</a></p>
