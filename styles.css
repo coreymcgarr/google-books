@@ -1,0 +1,42 @@
+* {
+  height: 100% vh;
+}
+
+nav.home {
+  position: fixed;
+  top: 0;
+  height: 50px;
+  width: 100%;
+}
+
+#home-logo {
+  width: 306px;
+  margin-left: 40.6%;
+  margin-right: 41%;
+  /*position: absolute;*/
+  margin-top: 173px;
+}
+
+#search-button {
+  width: 80px;
+}
+
+#home-searchbar {
+  width: 625px;
+  height: 32px;
+}
+
+#home-search {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+p.home {
+  margin-top: 12px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
