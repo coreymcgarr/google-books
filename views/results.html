@@ -1,0 +1,26 @@
+<nav class='results'>
+  <div>
+    <a ui-sref='home'><img id='google-logo' src='./images/google-logo.png' /></a>
+    <input id='results-searchbar' type='text' ng-model='search' />
+    <a ui-sref='results' ng-click='getBook(search)'><img id='mag-glass' src='./images/mag-glass.png' /></a>
+    <a><img id='microphone' src='./images/microphone.png' /></a>
+    <a><img id='signin-button-results' src='./images/signin.png'></a>
+    <a><img id='menu-button-results' src='./images/menu-button-results.png'></a>
+  </div>
+  <div class='options'>
+    <a>All</a>
+    <a>News</a>
+    <a>Images</a>
+    <a class='books'>Books</a>
+    <a>Shopping</a>
+    <a>More</a>
+    <a class='tools'>Tools</a>
+    <a class='settings'>Settings</a>
+  </div>
+</nav>
+
+<div>
+    <div>
+      <a class='title' href='{{book[0].volumeInfo.infoLink}}'>{{book[0].volumeInfo.title}}</a><br/>
+      <a href='{{book[0].volumeInfo.infoLink}}'><img src='{{book[0].volumeInfo.imageLinks.thumbnail}}' /></a>
+    </div>
