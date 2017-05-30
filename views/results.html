@@ -20,7 +20,7 @@
 </nav>
 
 <div>
-    <div>
-      <a class='title' href='{{book[0].volumeInfo.infoLink}}'>{{book[0].volumeInfo.title}}</a><br/>
-      <a href='{{book[0].volumeInfo.infoLink}}'><img src='{{book[0].volumeInfo.imageLinks.thumbnail}}' /></a>
+    <div ng-repeat='book in books'>
+      <a class='title' href='{{book.volumeInfo.infoLink}}'>{{book.volumeInfo.title}}</a><br/>
+      <a href='{{book.volumeInfo.infoLink}}'><img src='{{book.volumeInfo.imageLinks.thumbnail}}' /></a>
     </div>

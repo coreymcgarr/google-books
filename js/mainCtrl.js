@@ -5,7 +5,7 @@ angular.module('myApp')
      var promise = mainService.getBook(search);
 
      promise.then(function(results){
-         $scope.book = results.data.items;
+         $scope.books = results.data.items;
          console.log(results);
        });
    }
