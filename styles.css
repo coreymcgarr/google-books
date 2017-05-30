@@ -162,11 +162,6 @@ nav.results {
   border-top: 1px solid #c0c0c0;
 }
 
-/*#searchbar-div {
-  display: inline;
-  width: 632px;
-}*/
-
 #signin-button-results {
   float: right;
   width: 72px;
@@ -182,14 +177,12 @@ nav.results {
 }
 
 #mag-glass{
-  /*float: right;*/
   width: 25px;
   margin-left: -46px;
   margin-top: -5px;
 }
 
 #microphone {
-  /*float: right;*/
   width: 30px;
   margin-top: -6px;
   margin-left: -72px;;
@@ -213,5 +206,45 @@ nav.results {
 .tools {
   float: right;
   margin-top: 2px;
+}
 
+p.results {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 166px;
+  font-size: 13px;
+  font-family: 'Roboto', arial, sans-serif;
+  color: rgb(128, 128, 128);
+}
+
+a.title {
+  font-size: 18px;
+  color: rgb(26, 13, 171);
+  font-family: 'Roboto', arial, sans-serif;
+  overflow: hidden;
+}
+
+.results-list {
+  margin-left: 166px;
+  width: 630px;
+}
+
+.thumbnail {
+  width: 60px;
+  border: none;
+  margin-left: -3px;
+  float: left;
+}
+
+p.results-lists {
+  font-family: 'Roboto', arial, sans-serif;
+  font-size: 14px;
+  margin-top: -2px;
+  padding-left: 10px;
+  margin-bottom: 0;
+  line-height: 16px;
+}
+
+#green-text {
+  color: #006621;
 }

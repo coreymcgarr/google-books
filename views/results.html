@@ -19,8 +19,13 @@
   </div>
 </nav>
 
-<div>
+  <p class='results'>About 1,000,000 results (0.94 seconds)</p>
+<div class='results-list'>
     <div ng-repeat='book in books'>
-      <a class='title' href='{{book.volumeInfo.infoLink}}'>{{book.volumeInfo.title}}</a><br/>
-      <a href='{{book.volumeInfo.infoLink}}'><img src='{{book.volumeInfo.imageLinks.thumbnail}}' /></a>
+      <a class='title' href='{{book.volumeInfo.infoLink}}'>{{book.volumeInfo.title}}: {{book.volumeInfo.subtitle}}</a><br/>
+      <a href='{{book.volumeInfo.infoLink}}'><img class='thumbnail' src='{{book.volumeInfo.imageLinks.thumbnail}}' /></a>
+      <p id='green-text' class='results-lists'>https://books.google.com/books?isbn={{book.volumeInfo.industryIdentifiers[1].identifier}}</p>
+      <p class='results-lists'>{{book.volumeInfo.authors[0]}} - {{book.volumeInfo.publishedDate}} - <a href='{{book.volumeInfo.infoLink}}'>Preview</a> - <a href=''>More Editions</a></p>
+      <p class='results-lists'>{{book.searchInfo.textSnippet}}</p></br></br>
     </div>
+</div>
